@@ -7,7 +7,7 @@ function page() {
   return (
     <div>
       <PageHeader title={'About Us'} subTitle={'Last updated:04/05/2022'} />
-      <div className="area-xl">
+      <div className='area-xl'>
         <AboutUs />
         <RegisterReffer />
       </div>

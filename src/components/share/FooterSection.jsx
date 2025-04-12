@@ -29,7 +29,7 @@ const { Text, Title, Paragraph } = Typography;
 // Link data for dynamic rendering
 const companyLinks = [
   { href: '/for-samplers', text: 'For Samplers' },
-  { href: '/for-business', text: 'For Business owners' },
+  { href: '/', text: 'For Business owners' },
   { href: '/about', text: 'About us' },
 ];
 
@@ -95,9 +95,7 @@ const FooterSection = () => {
           }}
           className="hover:!text-[red]"
         >
-          <span  style={{ marginRight: '8px' }}>
-            {link.icon}
-          </span>
+          <span style={{ marginRight: '8px' }}>{link.icon}</span>
           {link.text}
         </Link>
       ))}
@@ -146,7 +144,10 @@ const FooterSection = () => {
       <div className="area-xl">
         <div style={{ marginBottom: '32px' }}>
           <LogoIcon />
-          <Paragraph className='max-w-2xl' style={{ color: '#c7c7c7', marginBottom: '24px' }}>
+          <Paragraph
+            className="max-w-2xl"
+            style={{ color: '#c7c7c7', marginBottom: '24px' }}
+          >
             Customers in Lagos, Abuja, Ibadan, Warri, Benin, Abeokuta, Akure and
             Portharcourt enjoy free delivery on items with the free delivery
             tag. Free delivery does not apply to large items like refrigerators,
